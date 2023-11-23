@@ -34,7 +34,7 @@ class ApiServer extends Server {
     constructor() {
         super(true);
         this.app.options('*', cors());
-//        this.app.use(cdrHeaderValidator(dsbOptions));
+        // this.app.use(cdrHeaderValidator(dsbOptions));
         this.setupControllers();
     }
 
