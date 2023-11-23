@@ -1,14 +1,18 @@
-import bankAProducts from "./bankA/products.json";
-import bankBProducts from "./bankB/products.json";
-import bankASchemes from "./bankA/schemes.json";
-import bankBSchemes from "./bankB/schemes.json";
+import alexProducts from "./alex/products.json";
+import alexSchemes from "./alex/schemes.json";
+import anzProducts from "./anz/products.json";
+import anzSchemes from "./anz/schemes.json";
+import lixiBankProducts from "./lixiBank/products.json";
+import lixiBankSchemes from "./lixiBank/schemes.json";
 
 export const products = {
-    bankA: bankAProducts,
-    bankb: bankBProducts,
+    alex: alexProducts,
+    anz: anzProducts,
+    lixiBank: lixiBankProducts
 }
 
 export const schemes = {
-    bankA: bankASchemes,
-    bankb: bankBSchemes,
+    alex: alexSchemes,
+    anz: anzSchemes,
+    lixiBank: lixiBankSchemes
 }
