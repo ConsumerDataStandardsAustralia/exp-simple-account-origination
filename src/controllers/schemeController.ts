@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { ClassOptions, Controller, Get } from '@overnightjs/core';
 import { schemes } from '../data';
 
-@Controller(':dhId/DSB/banking/origination/schemes/')
+@Controller(':dhId/cds-au/v1/DSB/banking/origination/schemes/')
 @ClassOptions({ mergeParams: true })
 export class SchemeController {
 

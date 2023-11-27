@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { ClassOptions, Controller, Post } from '@overnightjs/core';
 
-@Controller(':dhId/DSB/banking/accounts')
+@Controller(':dhId/cds-au/v1/DSB/banking/accounts')
 @ClassOptions({ mergeParams: true })
 export class ApplyController {
 

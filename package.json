@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/ConsumerDataStandardsAustralia/exp-simple-account-origination#readme",
   "dependencies": {
-    "@cds-au/holder-sdk": "^1.2.0",
+    "@cds-au/holder-sdk": "^1.2.1",
     "@overnightjs/core": "^1.7.6",
     "@types/consumer-data-standards": "^7.0.0",
     "cors": "^2.8.5",

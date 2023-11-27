@@ -1,31 +1,31 @@
 import * as controllers from './controllers';
 import { Server } from '@overnightjs/core';
-// import {
-//     cdrHeaderValidator,
-//     CdrConfig,
-//     EndpointConfig
-// }  from '@cds-au/holder-sdk';
+import {
+    cdrHeaderValidator,
+    CdrConfig,
+    EndpointConfig
+}  from '@cds-au/holder-sdk';
 import cors from 'cors';
 
-// const endpoints = [
-//     {
-//         "requestType": "GET",
-//         "requestPath": "/banking/products",
-//         "minSupportedVersion": 3,
-//         "maxSupportedVersion": 3
-//     },
-//     {
-//         "requestType": "GET",
-//         "requestPath": "/banking/products/{productId}",
-//         "minSupportedVersion": 4,
-//         "maxSupportedVersion": 4
-//     }
-// ] as EndpointConfig[];
+const endpoints = [
+    {
+        "requestType": "GET",
+        "requestPath": "/banking/products",
+        "minSupportedVersion": 3,
+        "maxSupportedVersion": 3
+    },
+    {
+        "requestType": "GET",
+        "requestPath": "/banking/products/{productId}",
+        "minSupportedVersion": 4,
+        "maxSupportedVersion": 4
+    }
+] as EndpointConfig[];
 
-// const dsbOptions: CdrConfig = {
-//     endpoints: endpoints
-
-// }
+const dsbOptions: CdrConfig = {
+    basePath: '/{bankId}',
+    endpoints: endpoints
+}
 
 class ApiServer extends Server {
 
@@ -34,7 +34,7 @@ class ApiServer extends Server {
     constructor() {
         super(true);
         this.app.options('*', cors());
-        // this.app.use(cdrHeaderValidator(dsbOptions));
+        this.app.use(cdrHeaderValidator(dsbOptions));
         this.setupControllers();
     }
 
