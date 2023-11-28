@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "a912f01a-238e-4a3f-87e7-35c263c8bd4f",
+		"name": "Simple Account Origination Experiment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30660806"
+	},
+	"item": [
+		{
+			"name": "Alex Bank",
+			"item": [
+				{
+					"name": "Get Products",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/alex/cds-au/v1/banking/products",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"alex",
+								"cds-au",
+								"v1",
+								"banking",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/alex/cds-au/v1/banking/products/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"alex",
+								"cds-au",
+								"v1",
+								"banking",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Origination Scheme",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/alex/cds-au/v1/DSB/banking/origination/schemes/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"alex",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"origination",
+								"schemes",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Product Application",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-path}}/alex/cds-au/v1/DSB/banking/accounts",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"alex",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ANZ",
+			"item": [
+				{
+					"name": "Get Products Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/anz/cds-au/v1/banking/products",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"anz",
+								"cds-au",
+								"v1",
+								"banking",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/anz/cds-au/v1/banking/products/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"anz",
+								"cds-au",
+								"v1",
+								"banking",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Origination Scheme Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/anz/cds-au/v1/DSB/banking/origination/schemes/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"anz",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"origination",
+								"schemes",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Product Application Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-path}}/anz/cds-au/v1/DSB/banking/accounts",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"anz",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lixi Bank",
+			"item": [
+				{
+					"name": "Get Products Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "3",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/lixiBank/cds-au/v1/banking/products",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"lixiBank",
+								"cds-au",
+								"v1",
+								"banking",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-v",
+								"value": "4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/lixiBank/cds-au/v1/banking/products/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"lixiBank",
+								"cds-au",
+								"v1",
+								"banking",
+								"products",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Origination Scheme Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/lixiBank/cds-au/v1/DSB/banking/origination/schemes/1234",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"lixiBank",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"origination",
+								"schemes",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Product Application Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base-path}}/lixiBank/cds-au/v1/DSB/banking/accounts",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"lixiBank",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
