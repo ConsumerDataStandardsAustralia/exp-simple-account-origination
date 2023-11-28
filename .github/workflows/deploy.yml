@@ -1,0 +1,23 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - deploy
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18.x'
+    - run: npm install
+    - run: npm run build
+    - run: npm run docker-build
+
