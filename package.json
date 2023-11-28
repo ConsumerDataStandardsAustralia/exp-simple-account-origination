@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rm -rf ./dist/ && npx tsc",
     "dev": "npm run build && concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "docker-build": "docker build -t exp-simple-account-origination . && docker tag exp-simple-account-origination"
+    "docker-build": "docker build -t exp-simple-account-origination ."
   },
   "repository": {
     "type": "git",
