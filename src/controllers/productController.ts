@@ -11,11 +11,24 @@ export class ProductController {
         console.log(`PUBLIC REQUEST: Get products for data holder: ${req.params.dhId}`);
 
         if (products[req.params.dhId]) {
+            const productSummaries: any = [];
+            for (const product of Object.values(products[req.params.dhId])) {
+                const productSummary = JSON.parse(JSON.stringify(product));
+                delete productSummary.bundles;
+                delete productSummary.features;
+                delete productSummary.constraints;
+                delete productSummary.eligibility;
+                delete productSummary.fees;
+                delete productSummary.depositRates;
+                delete productSummary.lendingRates;
+                productSummaries.push(productSummary);
+            }
+
             res.status(200)
             res.header('x-v', '3')
             res.json({
                 data: {
-                    products: Object.values(products[req.params.dhId])
+                    products: productSummaries
                 },
                 links: {
                     self: req.originalUrl

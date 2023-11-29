@@ -76,7 +76,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base-path}}/alex/cds-au/v1/banking/products/1234",
+							"raw": "{{base-path}}/alex/cds-au/v1/banking/products/8397effe-4703-470d-afaf-093502021c10",
 							"host": [
 								"{{base-path}}"
 							],
@@ -86,14 +86,14 @@
 								"v1",
 								"banking",
 								"products",
-								"1234"
+								"8397effe-4703-470d-afaf-093502021c10"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Get Origination Scheme",
+					"name": "Get Origination Scheme LIXI",
 					"event": [
 						{
 							"listen": "test",
@@ -118,7 +118,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{base-path}}/alex/cds-au/v1/DSB/banking/origination/schemes/1234",
+							"raw": "{{base-path}}/alex/cds-au/v1/DSB/banking/origination/schemes/8f717cb2-1acc-4b45-9a92-4e70149e1579",
 							"host": [
 								"{{base-path}}"
 							],
@@ -130,7 +130,51 @@
 								"banking",
 								"origination",
 								"schemes",
-								"1234"
+								"8f717cb2-1acc-4b45-9a92-4e70149e1579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Origination Scheme CDR",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", () => {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-DSB-v",
+								"value": "1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base-path}}/alex/cds-au/v1/DSB/banking/origination/schemes/827ab55b-4339-477a-a395-65c539a4ef20",
+							"host": [
+								"{{base-path}}"
+							],
+							"path": [
+								"alex",
+								"cds-au",
+								"v1",
+								"DSB",
+								"banking",
+								"origination",
+								"schemes",
+								"827ab55b-4339-477a-a395-65c539a4ef20"
 							]
 						}
 					},

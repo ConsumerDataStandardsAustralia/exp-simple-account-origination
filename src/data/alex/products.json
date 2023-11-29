@@ -1,4 +1,185 @@
 {
-    "1234": {},
-    "5678": {}
+    "8397effe-4703-470d-afaf-093502021c10": {
+        "additionalInformation": {
+            "eligibilityUri": "https://www.alex.com.au/legal/secured-personal-loan-target-market-determination/",
+            "feesAndPricingUri": "https://www.alex.bank/legal/credit-fees-guide/"
+        },
+        "brand": "Alex Bank",
+        "brandName": "Alex Bank",
+        "description": "Alex gets you a secured personal loan with personalised interest rates based on your credit history and doesn't penalise you for making additional repayments or paying your loan out earlier.\n\n\nOrigination via accredited brokers only.",
+        "isTailored": false,
+        "lastUpdated": "2023-11-14T14:01:22.453Z",
+        "name": "Secured Fixed Rate Personal Loan",
+        "productCategory": "PERS_LOANS",
+        "productId": "8397effe-4703-470d-afaf-093502021c10",
+        "fees": [
+            {
+                "name": "Establishment fee",
+                "feeType": "UPFRONT",
+                "amount": "295.00"
+            },
+            {
+                "name": "Late Payment Fee",
+                "feeType": "EVENT",
+                "amount": "0.00"
+            },
+            {
+                "name": "Early Repayment Fee",
+                "additionalInfo": "Flexibility to make extra repayments or payout loan in full without penalty",
+                "amount": "0.00",
+                "feeType": "EVENT"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals must have the legal capacity to enter into the loan contract. Not available for joint borrowers or non-individual borrowers."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Individuals must be an Australian Citizen or Permanent Resident"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            },
+            {
+                "additionalInfo": "Origination via accredited brokers only",
+                "eligibilityType": "OTHER",
+                "additionalValue": "Channel"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "10000"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "100000"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly or annual account keeping fees",
+                "additionalValue": "No ongoing fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "You can make extra repayments or payout the loan in full early without any penalty",
+                "additionalValue": "No early repayment or payout fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Pay weekly, fortnightly or monthly via direct debit",
+                "additionalValue": "Repayment frequency"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.0991",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "rate": "0.0949",
+                "additionalInfo": "Alex personal loans are available for a minimum of 1 year to a maximum of 7 years. Interest rates range from 9.49% to 18.49% p.a. (comparison rate* 9.91% to 18.95% p.a.). ",
+                "additionalValue": "P7Y",
+                "interestPaymentDue": "IN_ARREARS"
+            }
+        ],
+        "DSB-originationSchemes": [
+            "8f717cb2-1acc-4b45-9a92-4e70149e1579",
+            "827ab55b-4339-477a-a395-65c539a4ef20"
+        ]
+    },
+    "62e0fe85-edf4-4882-9411-0315556ad2ad": {
+        "additionalInformation": {
+            "eligibilityUri": "https://www.alex.bank/legal/personal-loan-target-market-determination/",
+            "feesAndPricingUri": "https://www.alex.bank/legal/credit-fees-guide/",
+            "overviewUri": "https://www.alex.bank/personal-loan/"
+        },
+        "applicationUri": "https://www.alex.bank/",
+        "brand": "Alex Bank",
+        "brandName": "Alex Bank",
+        "description": "Alex gets you a multi-award winning personal loan with personalised interest rates based on your credit history and doesn't penalise you for making additional repayments or paying your loan out earlier,",
+        "isTailored": false,
+        "lastUpdated": "2023-08-15T03:20:22.716Z",
+        "name": "Unsecured Fixed Rate Personal Loan",
+        "productCategory": "PERS_LOANS",
+        "productId": "62e0fe85-edf4-4882-9411-0315556ad2ad",
+        "fees": [
+            {
+                "name": "Establishment fee",
+                "amount": "0.00",
+                "feeType": "UPFRONT"
+            },
+            {
+                "name": "Late Payment Fee",
+                "amount": "0.00",
+                "feeType": "EVENT"
+            },
+            {
+                "name": "Early Repayment Fee",
+                "additionalInfo": "Flexibility to make extra repayments or payout loan in full without penalty",
+                "amount": "0.00",
+                "feeType": "EVENT"
+            }
+        ],
+        "eligibility": [
+            {
+                "eligibilityType": "NATURAL_PERSON",
+                "additionalValue": "Individuals must have the legal capacity to enter into the loan contract. Not available for joint borrowers or non-individual borrowers."
+            },
+            {
+                "eligibilityType": "RESIDENCY_STATUS",
+                "additionalValue": "Individuals must be an Australian Citizen or Permanent Resident"
+            },
+            {
+                "eligibilityType": "MIN_AGE",
+                "additionalValue": "18"
+            }
+        ],
+        "constraints": [
+            {
+                "constraintType": "MIN_LIMIT",
+                "additionalValue": "2100.00"
+            },
+            {
+                "constraintType": "MAX_LIMIT",
+                "additionalValue": "30000.00"
+            }
+        ],
+        "features": [
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "No monthly or annual account keeping fees",
+                "additionalValue": "No ongoing fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "You can make extra repayments or payout the loan in full early without any penalty",
+                "additionalValue": "No early repayment or payout fees"
+            },
+            {
+                "featureType": "OTHER",
+                "additionalInfo": "Pay weekly, fortnightly or monthly via direct debit",
+                "additionalValue": "Repayment frequency"
+            }
+        ],
+        "lendingRates": [
+            {
+                "lendingRateType": "FIXED",
+                "comparisonRate": "0.1199",
+                "repaymentType": "PRINCIPAL_AND_INTEREST",
+                "rate": "0.1199",
+                "additionalInfo": "Alex personal loans are available for a minimum of 6 months to a maximum of 5 years. Interest rates range from 11.99% to 19.74% p.a. (comparison rate* 11.99% to 19.74% p.a.).",
+                "additionalValue": "P5Y",
+                "interestPaymentDue": "IN_ARREARS"
+            }
+        ],
+        "DSB-originationSchemes": [
+            "8f717cb2-1acc-4b45-9a92-4e70149e1579",
+            "827ab55b-4339-477a-a395-65c539a4ef20"
+        ]
+    }
 }

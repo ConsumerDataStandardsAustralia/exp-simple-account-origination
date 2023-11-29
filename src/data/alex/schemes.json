@@ -1,4 +1,92 @@
 {
-    "1234": {},
-    "5678": {}
+    "8f717cb2-1acc-4b45-9a92-4e70149e1579": {
+        "schemeUType": "lixi",
+        "lixi": {
+            "submissionUri": "tbd",
+            "schemaUri": "tbd",
+            "lixiCode": "tbd",
+            "lixiVersion": "tbd",
+            "lixiCustomVersion": "tbd",
+            "productCodeMappings": [
+                {
+                    "productId": "8397effe-4703-470d-afaf-093502021c10",
+                    "productCode": "ABC123"
+                },
+                {
+                    "productId": "62e0fe85-edf4-4882-9411-0315556ad2ad",
+                    "productCode": "XYZ789"
+                }
+            ],
+            "schematronUri": "tbd",
+            "apiSpecificationUri": "tbd",
+            "additionalInfoUri": "tbd"
+        }
+    },
+    "827ab55b-4339-477a-a395-65c539a4ef20": {
+        "schemeUType": "cdrApplyForBankAccountV1",
+        "cdrApplyForBankAccountV1": {
+            "version": "1",
+            "minVersion": "1",
+            "dataRequirements": {
+                "v1": {
+                    "referrer": {
+                        "requirement": "REQUIRED",
+                        "confirmNeedsAnalysisConducted": {
+                            "requirement": "REQUIRED"
+                        },
+                        "confirmTargetMarketAssessed": {
+                            "requirement": "REQUIRED"
+                        },
+                        "confirmTerms": {
+                            "requirement": "REQUIRED",
+                            "terms": [
+                                {
+                                    "displayName": "Bank Account Terms and Conditions",
+                                    "termId": "1.0.0",
+                                    "uri": "https://terms.and.conditions.org/tc.pdf",
+                                    "mimeType": "applicaiton/pdf"
+                                }
+                            ]
+                        }
+                    },
+                    "applicants": {
+                        "requirement": "REQUIRED"
+                    },
+                    "products": {
+                        "requirement": "REQUIRED"
+                    },
+                    "income": {
+                        "requirement": "REQUIRED"
+                    },
+                    "expenses": {
+                        "requirement": "REQUIRED"
+                    },
+                    "assets": {
+                        "requirement": "REQUIRED"
+                    },
+                    "liabilities": {
+                        "requirement": "REQUIRED"
+                    },
+                    "cdrData": {
+                        "requirement": "OPTIONAL",
+                        "cdrAccounts": {
+                            "requirement": "OPTIONAL"
+                        },
+                        "cdrAccountDetails": {
+                            "requirement": "OPTIONAL"
+                        },
+                        "cdrBalances": {
+                            "requirement": "OPTIONAL"
+                        },
+                        "cdrTransactions": {
+                            "requirement": "OPTIONAL"
+                        },
+                        "cdrCustomerDetails": {
+                            "requirement": "OPTIONAL"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
